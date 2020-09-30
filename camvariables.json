@@ -55,7 +55,7 @@
       "group_name": "cloud"
     },
     {
-      "name": "power_instance_id",
+      "name": "powerinstanceid",
       "type": "string",
       "description": "Power Virtual Server Instance ID",
       "hidden": false,

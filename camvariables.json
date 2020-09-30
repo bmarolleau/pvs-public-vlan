@@ -1,0 +1,89 @@
+{
+  "input_datatypes": [
+  ],
+  "output_datatype": "content_template_output",
+  "input_groups": [
+    {
+      "name": "cloud",
+      "label": "IBM Cloud Configuration"
+    },
+    {
+      "name": "network",
+      "label": "Network Configuration"
+    }
+  ],
+  "output_groups": [
+    {
+      "name": "content_template_output",
+      "label": "Outputs"
+    }
+  ],
+  "template_input_params": [
+    {
+      "name": "ibmcloud_api_key",
+      "type": "string",
+      "description": "IBM Cloud API Key",
+      "hidden": false,
+      "label": "IBM Cloud API Key",
+      "secured": true,
+      "required": true,
+      "immutable": false,
+      "group_name": "cloud"
+    },
+    {
+      "name": "ibmcloud_region",
+      "type": "string",
+      "description": "IBM Cloud Region (e.g., us-south)",
+      "default": "us-south",
+      "hidden": false,
+      "label": "IBM Cloud Region (e.g., us-south)",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "cloud"
+    },
+    {
+      "name": "ibmcloud_zone",
+      "type": "string",
+      "description": "IBM Cloud Zone (e.g., us-south or eu-de-1)",
+      "default": "us-south",
+      "hidden": false,
+      "label": "IBM Cloud Zone (e.g., us-south or  eu-de-1)",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "cloud"
+    },
+    {
+      "name": "power_instance_id",
+      "type": "string",
+      "description": "Power Virtual Server Instance ID",
+      "hidden": false,
+      "label": "Power Virtual Server Instance ID",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "cloud"
+    },
+    {
+      "name": "networkname",
+      "type": "string",
+      "description": "Name of pub vlan Network to create",
+      "hidden": false,
+      "label": "Name of Network to create",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "network"
+    }
+  ],
+  "template_output_params": [
+    {
+      "name": "id",
+      "type": "string",
+      "hidden": false,
+      "label": "pub-vlan network id",
+      "secured": false
+    }
+  ]
+}
